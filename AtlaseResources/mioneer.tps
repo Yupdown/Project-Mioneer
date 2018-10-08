@@ -132,7 +132,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../Assets/Futile/Resources/Atlases/mioneer.json</filename>
+                <filename>../Assets/Futile/Resources/Atlases/mioneer.txt</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -181,7 +181,8 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">Tile.png</key>
+            <key type="filename">tiledirt.png</key>
+            <key type="filename">tommy.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>

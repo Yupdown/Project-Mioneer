@@ -1,7 +1,12 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
 using System.Collections;
 
-public class WorldMicrophone
+public class WorldMicrophone : IUpdatable
 {
     private Vector2 _worldPosition;
+
+    public void Update(float deltaTime)
+    {
+
+    }
 }

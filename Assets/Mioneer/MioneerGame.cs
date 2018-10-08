@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MioneerGame : LoopFlow
+public class MioneerGame : LoopFlow, IUpdatable
 {
-    private MioneerTileMap _tileMap;
+    private MioneerWorld _world;
 
     public MioneerGame()
     {
-        _tileMap = new MioneerTileMap();
+        _world = new MioneerWorld();
     }
 
     public override void Update(float deltaTime)
     {
-        // TODO
+        _world.Update(deltaTime);
 
         base.Update(deltaTime);
     }

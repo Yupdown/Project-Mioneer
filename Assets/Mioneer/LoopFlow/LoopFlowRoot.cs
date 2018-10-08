@@ -1,13 +1,8 @@
 ﻿using UnityEngine;
 
-public class LoopFlowRoot
+public class LoopFlowRoot : IUpdatable
 {
     private LoopFlow _runningFlow;
-
-    public LoopFlowRoot()
-    {
-
-    }
 
     public void Update(float deltaTime)
     {
@@ -16,6 +11,10 @@ public class LoopFlowRoot
 
     public void SwitchFlow(LoopFlow newFlow)
     {
+        if (_runningFlow != null)
+            _runningFlow.OnEnable();
+
         _runningFlow = newFlow;
+        newFlow.OnEnable();
     }
 }

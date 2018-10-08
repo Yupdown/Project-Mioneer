@@ -1,0 +1,28 @@
+{"frames": {
+
+"tiledirt.png":
+{
+	"frame": {"x":0,"y":0,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+"tommy.png":
+{
+	"frame": {"x":16,"y":0,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "mioneer.png",
+	"format": "RGBA8888",
+	"size": {"w":32,"h":16},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1a6732a37e54c2cb9d12e8bd370e0229:b7fbf2bfa8e6d6bff4ad062629f13474:e0ae70149f8e8942f99a34bcf7e824aa$"
+}
+}

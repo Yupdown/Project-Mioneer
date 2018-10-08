@@ -4,8 +4,6 @@ using System.Collections.Generic;
 
 public class AudioEngine : Single <AudioEngine>
 {
-    private AudioClip _musicClip;
-
     private List<AudioSource> _pooledAudios;
     private Transform _pooledObjectsOwner;
 
@@ -15,7 +13,7 @@ public class AudioEngine : Single <AudioEngine>
         _pooledObjectsOwner = new GameObject("Sound Objects").GetComponent<Transform>();
     }
 
-    public static AudioSource PlaySound(AudioClip clip, bool loop = false, float volume = 1f, float pitch = 1f, float stereoPan = 0f)
+    public static AudioSource PlayAudio(AudioClip clip, bool loop = false, float volume = 1f, float pitch = 1f, float stereoPan = 0f)
     {
         AudioSource audioSource = instance.GetAudioObject();
 
@@ -30,18 +28,6 @@ public class AudioEngine : Single <AudioEngine>
         audioSource.Play();
 
         return audioSource;
-    }
-
-    public static AudioSource PlayMusic(AudioClip clip, bool loop = true)
-    {
-        if (clip != instance._musicClip)
-        {
-            instance._musicClip = clip;
-            return PlaySound(clip, loop);
-        }
-
-        else
-            return null;
     }
 
     private AudioSource GetAudioObject()

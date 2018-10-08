@@ -11,8 +11,8 @@ public class MioneerTile : ITilePathNode, ITilePhysics
         _coordinateX = coordinateX;
         _coordinateY = coordinateY;
 
-        FSprite sprite = new FSprite("Tile");
-        sprite.SetPosition(new Vector2(_coordinateX - 5, _coordinateY - 5) * 16);
+        FSprite sprite = new FSprite("tiledirt");
+        sprite.SetPosition(new Vector2(_coordinateX - 4.5f, _coordinateY - 4.5f) * 16);
         sprite.color = Color.Lerp(Color.white, Color.black, sprite.GetPosition().sqrMagnitude / 6400f);
         Futile.stage.AddChild(sprite);
     }
