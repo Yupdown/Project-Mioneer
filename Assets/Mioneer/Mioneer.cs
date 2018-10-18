@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MioneerMain : SingleMono <MioneerMain>
+public class Mioneer : SingleMono <Mioneer>
 {
     private LoopFlowRoot _flowRoot;
 
