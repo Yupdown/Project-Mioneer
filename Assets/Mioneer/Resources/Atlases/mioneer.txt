@@ -2,15 +2,15 @@
 
 "tiledirt.png":
 {
-	"frame": {"x":0,"y":0,"w":16,"h":24},
+	"frame": {"x":0,"y":0,"w":24,"h":36},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
-	"sourceSize": {"w":16,"h":24}
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":36},
+	"sourceSize": {"w":24,"h":36}
 },
 "tommy1.png":
 {
-	"frame": {"x":0,"y":24,"w":16,"h":16},
+	"frame": {"x":0,"y":36,"w":16,"h":16},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
@@ -18,7 +18,7 @@
 },
 "tommy2.png":
 {
-	"frame": {"x":0,"y":40,"w":16,"h":16},
+	"frame": {"x":16,"y":36,"w":16,"h":16},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
@@ -26,7 +26,7 @@
 },
 "tommy3.png":
 {
-	"frame": {"x":0,"y":56,"w":16,"h":16},
+	"frame": {"x":0,"y":52,"w":16,"h":16},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
@@ -34,7 +34,7 @@
 },
 "tommy4.png":
 {
-	"frame": {"x":0,"y":72,"w":16,"h":16},
+	"frame": {"x":16,"y":52,"w":16,"h":16},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
@@ -42,7 +42,7 @@
 },
 "tommy5.png":
 {
-	"frame": {"x":0,"y":88,"w":16,"h":16},
+	"frame": {"x":0,"y":68,"w":16,"h":16},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
@@ -50,7 +50,7 @@
 },
 "tommy6.png":
 {
-	"frame": {"x":0,"y":104,"w":16,"h":16},
+	"frame": {"x":16,"y":68,"w":16,"h":16},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
@@ -61,8 +61,8 @@
 	"version": "1.0",
 	"image": "mioneer.png",
 	"format": "RGBA8888",
-	"size": {"w":16,"h":120},
+	"size": {"w":32,"h":84},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:53102e7669a5ed016611b770edcb0563:0df98f804f0f444ee98d260d259fe138:e0ae70149f8e8942f99a34bcf7e824aa$"
+	"smartupdate": "$TexturePacker:SmartUpdate:2d59711a687f7d635b1f5e0502b42e96:46530242ffbf5003f9b93ee87b4560d5:e0ae70149f8e8942f99a34bcf7e824aa$"
 }
 }

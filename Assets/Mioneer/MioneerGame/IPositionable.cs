@@ -2,5 +2,5 @@
 
 public interface IPositionable
 {
-    Vector3 position { get; }
+    Vector3 worldPosition { get; }
 }

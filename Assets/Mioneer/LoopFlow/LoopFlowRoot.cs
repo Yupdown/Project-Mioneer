@@ -12,7 +12,7 @@ public class LoopFlowRoot : IUpdatable
     public void SwitchFlow(LoopFlow newFlow)
     {
         if (_runningFlow != null)
-            _runningFlow.OnEnable();
+            _runningFlow.OnDisable();
 
         _runningFlow = newFlow;
         newFlow.OnEnable();

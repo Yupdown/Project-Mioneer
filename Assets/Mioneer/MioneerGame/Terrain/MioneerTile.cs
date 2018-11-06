@@ -15,7 +15,6 @@ public class MioneerTile : ITilePathNode, ITilePhysics, IGraphics
     public void InitializeSprites(FContainer container)
     {
         FSprite sprite = new FSprite("tiledirt");
-        
         container.AddChild(sprite);
     }
 
@@ -25,6 +24,7 @@ public class MioneerTile : ITilePathNode, ITilePhysics, IGraphics
         FSprite sprite = container.GetChildAt(0) as FSprite;
 
         container.SetPosition(worldCamera.GetScreenPosition(position) + sprite.element.sourcePixelSize * 0.5f);
+        container.sortZ = worldCamera.GetSortZ(position);
         sprite.color = worldCamera.GetColor(position);
     }
 }

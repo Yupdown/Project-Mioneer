@@ -13,13 +13,13 @@ public class AudioEngine : Single <AudioEngine>
         _pooledObjectsOwner = new GameObject("Sound Objects").GetComponent<Transform>();
     }
 
-    public static AudioSource PlayAudio(AudioClip clip, bool loop = false, float volume = 1f, float pitch = 1f, float stereoPan = 0f)
+    public static AudioSource PlayAudio(AudioClip audioClip, bool loop = false, float volume = 1f, float pitch = 1f, float stereoPan = 0f)
     {
-        AudioSource audioSource = instance.GetAudioObject();
+        AudioSource audioSource = instance.GetPooledAudioObject();
 
-        audioSource.gameObject.name = clip.name;
+        audioSource.gameObject.name = audioClip.name;
 
-        audioSource.clip = clip;
+        audioSource.clip = audioClip;
         audioSource.loop = loop;
         audioSource.volume = volume;
         audioSource.pitch = pitch;
@@ -30,7 +30,7 @@ public class AudioEngine : Single <AudioEngine>
         return audioSource;
     }
 
-    private AudioSource GetAudioObject()
+    private AudioSource GetPooledAudioObject()
     {
         foreach (var pooledAudio in _pooledAudios)
         {
