@@ -21,7 +21,6 @@ public class Menu : IUpdatable
     public void AddMenuObject(MenuObject menuObject)
     {
         menuObject.OnActive(this);
-
         _menuObjects.Add(menuObject);
     }
 
@@ -31,7 +30,7 @@ public class Menu : IUpdatable
 
         if (index < 0)
         {
-            Debug.LogWarning("Tried to remove invalid menuObject");
+            Debug.LogWarning("Tried to remove invalid MenuObject");
             return;
         }
 

@@ -33,5 +33,7 @@ public class CharacterPlayer : Character, IGraphics
         container.SetPosition(worldCamera.GetScreenPosition(_worldPosition));
         container.sortZ = worldCamera.GetSortZ(_worldPosition);
         (container.GetChildAt(0) as FSprite).element = _elements[(int)Mathf.Repeat(Time.time * 10f, _elements.Length)];
+
+        container.rotation = Time.time * 180f;
     }
 }
