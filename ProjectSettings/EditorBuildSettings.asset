@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Mioneer/Scenes/MioneerMain.unity
-    guid: 1e7a0284e88798642a30c29c723c6953
-  - enabled: 1
-    path: Assets/Mioneer/Scenes/MioneerGame.unity
-    guid: f3afac8f847edc14499da7258a373efd
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
